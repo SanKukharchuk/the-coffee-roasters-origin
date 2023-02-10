@@ -783,18 +783,7 @@ footer {
 }
 
 .mobile-menu {
-	left: -100%;
-	display: flex;
-	flex-direction: column;
-	gap: 6vh;
-	background: rgba(17, 17, 17, 0.95);
-	align-items: center;
-	justify-content: center;
-	position: fixed;
-	height: 100vh;
-	width: 100vw;
-	top: 0;
-	transition: 0.7s;
+	display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -958,7 +947,20 @@ footer {
 		transform: translateY(-4px) rotate(-45deg);
 	}
 	
-
+	.mobile-menu {
+		left: -100%;
+		display: flex;
+		flex-direction: column;
+		gap: 6vh;
+		align-items: center;
+		justify-content: center;
+		background: rgba(17, 17, 17, 0.95);
+		position: fixed;
+		height: 100vh;
+		width: 100vw;
+		top: 0;
+		transition: 0.7s;
+	}
 }
 
 
