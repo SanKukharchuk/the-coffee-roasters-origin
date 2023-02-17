@@ -25,8 +25,8 @@ header {
 
 .header-logo {
 	gap: 10px;
-	font-weight: 400;
-	font-size: 16px;
+	font-weight: 600;
+    font-size: 13px;
 	text-transform: uppercase;
 	color: #eeeeee;
 }
@@ -40,31 +40,31 @@ header {
 }
 
 .header-navigation li {
-	font-weight: 400;
-	font-size: 16px;
+	font-weight: 600;
+    font-size: 13px;
 	list-style-type: none;
 	text-transform: uppercase;
 	color: #ffffff;
 }
 
 .header-navigation a {
-	color: #8fcbff;
+	color: #ffffff;
 	text-decoration: none;
 }
 
 .header-navigation a:hover {
-	color: #f1cfac;
+	color: #ffa18d;
 }
 
 .header-navigation a:active {
-	color: #eab066;
+	color:#ff6644;
 	transition-property: color;
 	transition-duration: 100ms;
 
 }
 
 .home {
-	background-image: url('./img/barista.png');
+	background-image: url('./img/barista.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -87,20 +87,20 @@ h1 {
 	font-weight: 700;
 	font-size: 6.2vw;
 	color: #ffffff;
-	margin-bottom: 24px;
+	margin-bottom: 23px;
 }
 
 h4 {
-	font-weight: 100;
-	font-size: 26px;
-	line-height: 125%;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 170%;
 	text-align: center;
 	color: #ffffff;
 	margin-bottom: 28px;
-	width: 62%;
+	width: 55%;
 }
 
-.btn {
+.btn, .btn-menu {
 	width: auto;
 	padding: 0px 41px;
 	height: 48px;
@@ -116,6 +116,12 @@ h4 {
     transition-duration: 700ms;
 }
 
+.btn-menu:hover {
+	background-color: #ffffffc4;
+	color:#b7a798;
+	border: 1px solid #ffffffc4;
+}
+
 .btn:hover {
 	background-color: #ffffffc4;
 	color:#2e3a22;
@@ -125,7 +131,7 @@ h4 {
 .why-us {
 	display: flex;
 	background-image: url('./img/coffee.jpg');
-	background-color: #fcfbf9;
+	background-color: #e5eae4;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -138,6 +144,10 @@ h4 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.why-us p, .why-us h6 {
+	color: #986b55;
 }
 
 h6 {
@@ -167,7 +177,7 @@ h6 {
 
 .feature-left:not(:last-child),
 .feature-right:not(:last-child) {
-	margin-bottom: 14px;
+	margin-bottom: 35px;
 }
 
 .block-left,
@@ -749,11 +759,11 @@ footer {
 }
 
 .menu-footer a:hover {
-	color: lightblue;
+	color: #ffa18d;
 }
 
 .menu-footer a:active {
-	color: #6ab9ff;
+	color: #ff6644;
 	transition-property: color;
 	transition-duration: 100ms;
 
@@ -954,7 +964,7 @@ footer {
 		gap: 6vh;
 		align-items: center;
 		justify-content: center;
-		background: rgba(17, 17, 17, 0.95);
+		background: #dbab7de3;
 		position: fixed;
 		height: 100vh;
 		width: 100vw;
@@ -975,7 +985,7 @@ footer {
 	}
 
 	.why-us {
-		background-position: right 122% bottom;
+		background-position: right 100% bottom;
 	}
 
 	.invitation-content {
@@ -983,4 +993,249 @@ footer {
 	}
 
 
+}
+
+@media screen and (max-width: 554px) {
+
+	.section {
+		padding: 10vh 7vw;
+	}
+
+	header {
+		width: 100vw;
+	}
+
+	#logo-illustration {
+		margin-bottom: 8px;
+		width: 110px;
+	}
+
+	.home-content {
+		top: 43%;
+		width: 70vw;
+	}
+
+	h1 {
+		margin-bottom: 0;
+	}
+
+	h4 {
+		font-size: 20px;
+		margin-bottom: 40px;
+	}
+
+	.block-left, .block-right {
+		width: 70%;
+	}
+
+	.feature-left:not(:last-child), .feature-right:not(:last-child) {
+		margin-bottom: 25px;
+	}
+
+	.block-left {
+		margin-bottom: 25px;
+	}
+
+	.invitation-content {
+		width: 80vw;
+	}
+
+	.h3 {
+		font-size: 30px;
+    	font-weight: 600;
+	}
+
+	.invitation-content p {
+		width: 277px;
+		font-size: 12px;
+	}
+
+	.btn {
+		font-size: 15px;
+	}
+
+	h3 {
+		font-size: 30px;
+	}
+
+	.menu-title p {
+		width: 375px;
+		font-size: 12px;
+	}
+
+	.filter p {
+		font-size: 11px;
+	}
+
+	.menu-item-img {
+		width: 30px;
+		height: 30px;
+	}
+
+	.dish-description {
+		margin-left: 10px;
+		width: 300px;
+	}
+
+	h6 {
+		font-weight: 300;
+		font-size: 9px;
+	}
+
+	.dish-text p {
+		font-weight: 300;
+		font-size: 9px;
+	}
+
+	.menu-item-description p {
+		font-size: 7px;
+		line-height: 10px;
+	}
+
+	.menu-item-description {
+		justify-content: center;
+	}
+
+	.discription-left p, .discription-right p {
+		font-size: 5px;
+		line-height: 180%;
+	}
+
+	.why-us-icon {
+		width: 50px;
+	}
+
+	.why-us {
+		background-position: left 5%;
+	}
+
+	.testimonials-text p {
+		font-size: 12px;
+    	width: 272px;
+	}
+
+	.blog-title p {
+		width: 317px;
+		font-size: 12px;
+	}
+
+	.blog-text p, .blog-text h6 {
+		font-size: 12px;
+	}
+
+	 .line {
+		width: 8px;
+	}
+
+	.read-more p {
+		font-size: 8px;
+	}
+
+	h5 {
+		font-weight: 400;
+		font-size: 18px;
+	}
+
+	.locations-content p {
+		font-size: 12px;
+	}
+
+	input[type=email] {
+		font-size: 12px;
+	}
+
+	input[type=submit] {
+		font-size: 12px;
+		padding: 0px 20px;
+	}
+
+	.newsletter-title p {
+		width: 310px;
+		font-size: 12px;
+	}
+ 
+	.copyright-text {
+		font-size: 9px;
+	}
+
+	.footer-ellipse p {
+		font-size: 7px;
+	}
+
+	.follow-us {
+		gap: 17px;
+
+	}
+
+	.testimonials {
+		background-position: right 50%;
+	}
+}
+
+
+
+
+
+
+@media screen and (max-width: 414px) {
+
+	.home-content {
+		top: 46%;
+		width: 82vw;
+	}
+
+	h4 {
+		line-height: 150%;
+	}
+
+	.btn-menu:hover {
+		color: #d7ac83;
+	}
+
+	h1 {
+		margin-bottom: 5px;
+	}
+
+	.h3, h3 {
+		font-size: 26px;
+	}
+
+	.menu-title p {
+		width: 289px;
+	}
+
+	.dish-description {
+		width: 265px;
+	}
+
+
+	input[type=submit] {
+		font-weight: 500;
+    	padding: 0px 13px;
+    	font-size: 10px;
+	}
+
+	input[type=email] {
+		font-size: 9px;
+		padding-left: 4px;
+	}
+
+	.footer-ellipse {
+		width: 20px;
+    	height: 20px;
+
+	}
+
+	.footer-ellipse p {
+		font-size: 6px;
+	}
+
+	.follow-us {
+		gap: 8px;
+	}
+
+	.copyright-text {
+		font-size: 7px;
+	}
+	
 }
