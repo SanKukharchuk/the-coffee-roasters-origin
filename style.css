@@ -420,7 +420,7 @@ h3 {
     align-items: center;
     width: 50%;
     margin: 0 auto;
-	backdrop-filter: blur(1.8px);
+	backdrop-filter: blur(1.2px);
 }
 
 .testimonials-content .separator {
@@ -992,10 +992,15 @@ footer {
 		width: 57vw;
 	}
 
+	.mobile-menu-content ul {
+		gap: 15px;
+	}
+
 
 }
 
 @media screen and (max-width: 554px) {
+
 
 	.section {
 		padding: 10vh 7vw;
@@ -1022,10 +1027,6 @@ footer {
 	h4 {
 		font-size: 20px;
 		margin-bottom: 40px;
-	}
-
-	.block-left, .block-right {
-		width: 70%;
 	}
 
 	.feature-left:not(:last-child), .feature-right:not(:last-child) {
@@ -1062,47 +1063,22 @@ footer {
 		width: 375px;
 		font-size: 12px;
 	}
-
-	.filter p {
-		font-size: 11px;
-	}
-
-	.menu-item-img {
-		width: 30px;
-		height: 30px;
-	}
-
+	
 	.dish-description {
 		margin-left: 10px;
 		width: 300px;
 	}
 
-	h6 {
-		font-weight: 300;
-		font-size: 9px;
+	.menu-item-description {
+		justify-content: normal;
 	}
 
-	.dish-text p {
-		font-weight: 300;
-		font-size: 9px;
+	.dish-description  h6 {
+		font-size: 12px;
 	}
 
 	.menu-item-description p {
-		font-size: 7px;
-		line-height: 10px;
-	}
-
-	.menu-item-description {
-		justify-content: center;
-	}
-
-	.discription-left p, .discription-right p {
-		font-size: 5px;
-		line-height: 180%;
-	}
-
-	.why-us-icon {
-		width: 50px;
+		font-size: 12px;
 	}
 
 	.why-us {
@@ -1121,14 +1097,6 @@ footer {
 
 	.blog-text p, .blog-text h6 {
 		font-size: 12px;
-	}
-
-	 .line {
-		width: 8px;
-	}
-
-	.read-more p {
-		font-size: 8px;
 	}
 
 	h5 {
@@ -1152,14 +1120,6 @@ footer {
 	.newsletter-title p {
 		width: 310px;
 		font-size: 12px;
-	}
- 
-	.copyright-text {
-		font-size: 9px;
-	}
-
-	.footer-ellipse p {
-		font-size: 7px;
 	}
 
 	.follow-us {
@@ -1196,6 +1156,11 @@ footer {
 		margin-bottom: 5px;
 	}
 
+	.block-left, .block-right {
+		width: 80%;
+	}
+
+
 	.h3, h3 {
 		font-size: 26px;
 	}
@@ -1209,33 +1174,22 @@ footer {
 	}
 
 
+
 	input[type=submit] {
 		font-weight: 500;
     	padding: 0px 13px;
-    	font-size: 10px;
 	}
 
 	input[type=email] {
-		font-size: 9px;
 		padding-left: 4px;
 	}
 
-	.footer-ellipse {
-		width: 20px;
-    	height: 20px;
-
-	}
-
-	.footer-ellipse p {
-		font-size: 6px;
+	.copyright-text {
+		font-size: 10px;
 	}
 
 	.follow-us {
 		gap: 8px;
-	}
-
-	.copyright-text {
-		font-size: 7px;
 	}
 	
 }
