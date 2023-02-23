@@ -413,6 +413,7 @@ h3 {
 	align-items: center;
     display: flex;
 	height: 85vh;
+	position: relative;
 }
 
 .testimonials-content {
@@ -420,7 +421,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-	backdrop-filter: blur(1.2px);
+	height: 100%;
 }
 
 .testimonials-content .separator {
@@ -458,7 +459,9 @@ h3 {
 .testimonials-nav {
 	display: flex;
 	gap: 12px;
-	margin-top: 55px;
+	position: absolute;
+    bottom: 14.2vh;
+    top: auto;
 }
 
 
@@ -470,6 +473,7 @@ h3 {
 	display: flex;
 	align-items: center;
 	width: 100%;
+	height: 100%;
 }
 
 
@@ -888,7 +892,6 @@ footer {
 	}
 
 	
-
 	.why-us {
 		background-position: right 145% bottom;
 		background-size: cover;
