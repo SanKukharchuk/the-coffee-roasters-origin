@@ -412,13 +412,13 @@ h3 {
 	background-position: center center;
 	align-items: center;
     display: flex;
+	height: 85vh;
 }
 
 .testimonials-content {
 	display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
     margin: 0 auto;
 	backdrop-filter: blur(1.2px);
 }
@@ -438,7 +438,7 @@ h3 {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 150%;
-	width: 555px;
+	width: 382px;
     text-align: center;
 }
 	
@@ -469,8 +469,19 @@ h3 {
 .slideshow-container {
 	display: flex;
 	align-items: center;
+	width: 100%;
 }
 
+
+.slides-btn {
+	display: flex;
+    align-items: center;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+}
 
 .prev, .next {
 	cursor: pointer;
@@ -842,6 +853,10 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+	.slides-btn {
+		width: 72vw;
+	}
+
 	
 	.section {
 		padding: 14.2vh 6vw;
@@ -1020,6 +1035,10 @@ footer {
 
 @media screen and (max-width: 575px) {
 
+	.slides-btn {
+		width: 86vw;
+	}
+
 	#logo-illustration {
 		margin-bottom: 24px;
 	}
@@ -1045,6 +1064,10 @@ footer {
 
 @media screen and (max-width: 554px) {
 
+
+	.slides-btn {
+		width: 70vw;
+	}
 
 	.section {
 		padding: 10vh 7vw;
@@ -1217,7 +1240,14 @@ footer {
 		width: 265px;
 	}
 
+	.slides-btn {
+		width: 90vw;
+	}
 
+	.prev, .next {
+		padding: 8px;
+		font-size: 12px;
+	}
 
 	input[type=submit] {
 		font-weight: 500;
@@ -1226,6 +1256,7 @@ footer {
 
 	input[type=email] {
 		padding-left: 4px;
+		width: 57%;
 	}
 
 	.copyright-text {
