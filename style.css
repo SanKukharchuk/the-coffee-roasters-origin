@@ -431,7 +431,7 @@ h3 {
 
 .testimonials-content h3 {
 	color:#FFFFFF;
-	margin-bottom: 24px;
+	margin-bottom: 14px;
 }
 
 .testimonials-text p {
@@ -518,6 +518,15 @@ h3 {
 	animation-name: fade;
 	animation-duration: 1.5s;
 }
+
+.mySlides {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+}
+
 
 @keyframes fade {
 	from {opacity: .4}
@@ -1269,5 +1278,6 @@ footer {
 	.follow-us {
 		gap: 8px;
 	}
+	
 	
 }
