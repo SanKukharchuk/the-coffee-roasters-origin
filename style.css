@@ -521,9 +521,9 @@ h3 {
 
 .mySlides {
 	position: absolute;
-	top: 50%;
+	top: calc(50% - 100px);
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, 0);
 	
 }
 
